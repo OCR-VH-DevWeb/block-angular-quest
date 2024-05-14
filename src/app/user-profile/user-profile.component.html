@@ -1,13 +1,21 @@
-<div class="userProfile">
-  <img [src]="user.photo" alt="User Photo" />
+<section class="userProfile">
+  <div class="avatarUser">
+    <img [src]="user.photo" alt="User Photo" />
+  </div>
   <p class="name">Nom : {{ user.name }}</p>
   <p class="firstName">Prénom : {{ user.firstName }}</p>
   <!-- condition to show or not the age -->
-  <p *ngIf="!hideAge">Âge : {{ user.age }}</p>
+  <p class="age" *ngIf="!hideAge">Âge : {{ user.age }}</p>
   <!-- afficher la citation -->
-  <p class="citation">{{ user.quote }}</p>
-  <input type="text" placeholder="Enter your quote" [(ngModel)]="user.quote" />
+  <div class="userQuote">
+    <p class="citation">{{ user.quote }}</p>
+    <input
+      type="text"
+      placeholder="Enter your quote"
+      [(ngModel)]="user.quote"
+    />
+  </div>
   <button class="ageButton" (click)="hideAge = !hideAge">
     Afficher/Masquer mon âge
   </button>
-</div>
+</section>

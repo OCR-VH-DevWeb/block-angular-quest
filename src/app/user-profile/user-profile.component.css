@@ -1,19 +1,17 @@
-:root {
-  --font-family: "Roboto";
-  --border-style: 1px solid grey;
-}
-
 .userProfile {
   width: 400px;
   height: auto;
   margin: 50px;
-  padding: 2px;
-  background-color: rgb(240, 240, 232);
-  border: 1px solid grey;
+  background-color: rgb(252, 252, 252);
+  border: 1px solid lightgrey;
   border-radius: 5px;
-  font-family: var(--font-family);
+  font-family: "Roboto";
   font-size: 18px;
   line-height: 1.5;
+
+  .avatarUser {
+    padding: 0 5px;
+  }
   img {
     width: 100%;
     border-radius: 5px;
@@ -24,13 +22,24 @@
   .firstName {
     font-size: 22px;
     font-weight: 500;
+    margin: 0 20px;
+  }
+
+  .userQuote {
+    width: 100%;
+  }
+  .age,
+  .citation {
+    margin-left: 20px;
   }
   input {
     display: block;
+    margin-left: 20px;
   }
 
   .ageButton {
-    margin: 15px 0 15px 25px;
-    font-family: var(--font-family);
+    margin: 15px 0 15px 20px;
+    font-family: "Roboto";
+    font-size: 20px;
   }
 }

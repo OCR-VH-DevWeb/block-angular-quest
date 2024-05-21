@@ -1,0 +1,28 @@
+<!-- ///////////////////Angular 03.1 - Les directives//////////////////////// -->
+
+<!--///////////////////Angular 03.1 - Les directives [ngStyle] [ngClass]////////////////////////-->
+<ul>
+  <li>Pommes de terre</li>
+  <li [ngStyle]="{ backgroundColor: isThisIngredientVital ? 'red' : 'yellow' }">
+    Raclette
+  </li>
+  <li>Jambon</li>
+  <li [ngClass]="{ vital: isThisIngredientVital }">Cornichons</li>
+  <li>Chou-fleur</li>
+</ul>
+
+<!--///////////////////Angular 03.1 - La structural directives [*ngIf]////////////////////////-->
+<ul>
+  <li *ngIf="isGuestListDisplayed">Brenda</li>
+  <li>Dylan</li>
+  <li>Michel Drucker</li>
+  <li>Marc Aurèle</li>
+  <li>Julie</li>
+</ul>
+
+<!--///////////////////Angular 03.1 - La structural directives [*ngIf]////////////////////////-->
+<ul>
+  <li *ngFor="let song of songList">
+    {{ song }}
+  </li>
+</ul>

@@ -29,7 +29,11 @@
   align-self: end;
 }
 
-/* Méthode Flex à finir */
+.userProfile {
+  display: flex;
+}
+
+/* Méthode Flex à compléter pour avoir les 2 versions! */
 /* .container {
   display: flex;
   flex-wrap: wrap;
@@ -42,6 +46,8 @@
     height: 50%;
   }
 } */
-.userProfile {
-  display: flex;
+/* ///////////////////Angular 03.1 - Les directives//////////////////////// */
+.vital {
+  color: red;
+  font-weight: bold;
 }
